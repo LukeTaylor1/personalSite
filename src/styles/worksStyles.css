@@ -44,6 +44,7 @@ section.worksMain{
     position: relative;
     left: 200px;
     top: 50px;
+    height: 5650px;
 }
 
 .sortMenu {
@@ -84,4 +85,5 @@ section.worksMain{
     text-decoration: none;
     font-size: 45px;
     background-color: #ECE3DA;
+    color: #353238;
 }

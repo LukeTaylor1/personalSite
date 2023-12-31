@@ -37,24 +37,26 @@ import Footer from '../components/Footer.astro';
         	<p class="worksMainTitle">my work</p>
 			<Nav></Nav>
 		</section>
-		<section class="worksMain">
-			<div class="sortMenu">
-				<select id="sortOptions">
-					<option value="all" selected>All</option>
-					<option value="code">Code</option>
-					<option value="uiux">UI/UX</option>
-					<option value="design">Design</option>
-				</select>
-			</div>
-			<div class="cards">
-				<Card text="Rocks + Machine Learning" imageFile= {NACME} bioLink="/microDebi" class="sortable all code"></Card>
-				<Card text="Water Tracker Application" imageFile= {waterTracker} bioLink="/waterTracker" class="sortable all code uiux"></Card>
-				<Card text="Spotify Desktop Redesign" imageFile={spotifyLogo} bioLink="/spotifyRedesign" class="sortable all uiux design"></Card>
-				<Card text="Live Stream App" imageFile={streamIcon} bioLink="/liveStream" class="sortable all uiux design"></Card>
-				<Card text="Delicious Bites Webdesign" imageFile={deliciousBitesCover} bioLink="/deliciousBites" class="sortable all design"></Card>
-				<Card text="Spiderverse Infographic" imageFile={infographicCover} bioLink="/itsvInfoGraphic" class="sortable all design"></Card>
-				<Card text="HipHop Book" imageFile={passionProj} bioLink="/passionProj" class="sortable all design"></Card>
-				<Card text="Album Posters" imageFile={posterCover} bioLink="/artPoster" class="sortable all design"></Card>
+		<section>
+			<div class="worksMain">
+				<div class="sortMenu">
+					<select id="sortOptions">
+						<option value="all" selected>All</option>
+						<option value="code">Code</option>
+						<option value="uiux">UI/UX</option>
+						<option value="design">Design</option>
+					</select>
+				</div>
+				<div class="cards">
+					<Card text="Rocks + Machine Learning" imageFile= {NACME} bioLink="/microDebi" class="sortable all code"></Card>
+					<Card text="Water Tracker Application" imageFile= {waterTracker} bioLink="/waterTracker" class="sortable all code uiux"></Card>
+					<Card text="Spotify Desktop Redesign" imageFile={spotifyLogo} bioLink="/spotifyRedesign" class="sortable all uiux design"></Card>
+					<Card text="Live Stream App" imageFile={streamIcon} bioLink="/liveStream" class="sortable all uiux design"></Card>
+					<Card text="Delicious Bites Webdesign" imageFile={deliciousBitesCover} bioLink="/deliciousBites" class="sortable all design"></Card>
+					<Card text="Spiderverse Infographic" imageFile={infographicCover} bioLink="/itsvInfoGraphic" class="sortable all design"></Card>
+					<Card text="HipHop Book" imageFile={passionProj} bioLink="/passionProj" class="sortable all design"></Card>
+					<Card text="Album Posters" imageFile={posterCover} bioLink="/artPoster" class="sortable all design"></Card>
+				</div>
 			</div>
 		</section>
     </body>
