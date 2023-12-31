@@ -1,0 +1,58 @@
+---
+import type { voidElementNames } from 'astro/runtime/server/index.js';
+import microPic from '../../src/images/AMLI_4.jpg'
+import Footer from '../components/Footer.astro';
+import '../styles/microDebiStyles.css'
+---
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+		<!-- Other head elements -->
+		<title>Rocks + Machine Learning</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<script type="module" src="/src/script.js"></script>
+    </head>
+    <body>
+		<section class="container">
+			<a href="/works"><i class="fa fa-arrow-left fa-3x backArrow" aria-hidden="true"></i></a>
+			<div class="mainMicro">
+				<img src={microPic.src} width={microPic.width} height ={microPic.height} alt="presentation picture" class="mainImg">
+				<p class="mainTitle mt1">Rocks +</p>
+				<p class="mainTitle mt2">Machine Learning</p>
+				<div class="content">
+					<p class="subTitle">Overview</p>
+					<p class="body">To determine the production stages of ancient stone tools using automated measurements taken of experimental microdebitage.</p>
+					<p class="subTitle">Goals</p>
+					<p class="body">To create a model that will accurately determine the production stage that an ancient stone tool was undergoing based off the features of the microdebitage left behind.</p>
+					<p class="subTitle">Problem</p>
+					<p class="body">
+						The smallest of these artifacts, microdebitage, measures less than 6mm and tends to be less vulnerable to post-depositional movement from human activities, such as cleaning 
+						and sweeping, and natural processes, such as bioturbation and erosion. Because of this, archaeologists can study the spatial organization of microdebitage to better understand 
+						where stone tools were being made at archaeological sites. However, the study of microdebitage is hindered by tedious and time-consuming methods. For example, an experienced 
+						analyst will invest up to 10 hours to separate microdebitage from an archaeological soil matrix sample, following water-screening or flotation and then manual inspection through 
+						microscopy.
+
+					</p>
+					<p class = "subTitle">Goal</p>
+					<p class="body">Create a machine learning algorithm that classifies microdebitage efficiently to save researchers time in their work.</p>
+					<p class="subTitle">Results</p>
+					<p class="body"> 
+						We created several algorithms to see which would work the best for the data we had. We discovered due to the limits of the data we recieved, the model was as accurate as we would've
+						liked.
+						read about our process with the link below that takes you to our readMe file.
+					</p>
+					<a href="https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/main/README.md" target="_blank"><div class="more">Read More</div></a>
+				</div>
+			</div>
+		</section>
+		<Footer></Footer>
+    </body>
+</html>

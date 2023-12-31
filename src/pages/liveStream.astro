@@ -1,0 +1,49 @@
+---
+import Footer from '../components/Footer.astro';
+import '../styles/liveStreamStyles.css';
+
+import mock1 from '../images/liveMock1.jpg';
+import mock2 from '../images/liveMock2.jpg';
+import final from '../images/liveStreamFinal.jpg';
+---
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+		<!-- Other head elements -->
+		<title>Live Stream</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<script type="module" src="/src/script.js"></script>
+    </head>
+    <body>
+		<section class="container">
+			<a href="/works"><i class="fa fa-arrow-left fa-3x backArrow" aria-hidden="true"></i></a>
+            <div class="mainCont">
+				<p class="mainTitle">Live Stream Mockup</p>
+                <p class="body"> 
+					While this exercise involved creating mockups for web applications, I'm pleased 
+					with the outcome. The challenge was to conceptualize a live streaming platform, 
+					aspiring to rival established platforms like Twitch and Kick. I aimed to deconstruct 
+					recurring themes, layouts, and designs prevalent in such applications. From a 
+					technical standpoint, I explored ways to introduce depth to the interface, steering 
+					away from a flat design by incorporating gradients in the background. Additionally, 
+					I find the use of textures intriguing and plan to delve deeper into this aspect in 
+					future projects. Notably, I organized the home page categories to represent the three 
+					most popular use cases for a video game streaming application, emphasizing a thoughtful 
+					division of the layout.
+                </p>
+				<div class="images">
+					<img src={mock1.src} width={mock1.width} height ={mock1.height} alt="Early Stage mockup" class="streamImg">
+					<img src={mock2.src} width={mock2.width} height ={mock2.height} alt="Mid Stage mockup" class="streamImg">
+					<img src={final.src} width={final.width} height ={final.height} alt="Final Product" class="streamImg">
+				</div>
+			</div>
+            <Footer></Footer>
+		</section>
+    </body>
+</html>

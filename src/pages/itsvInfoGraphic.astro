@@ -1,0 +1,37 @@
+---
+
+import Footer from '../components/Footer.astro';
+import graphic from '../images/340Infographic-05.png';
+import '../styles/infoGraphicStyles.css'
+---
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+		<!-- Other head elements -->
+		<title>Info Graphic</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<script type="module" src="/src/script.js"></script>
+    </head>
+    <body>
+		<section class="container">
+			<a href="/works"><i class="fa fa-arrow-left fa-3x backArrow" aria-hidden="true"></i></a>
+            <div class="mainCont">
+				<p class="mainTitle">Spider-Verse Infographic</p>
+                <p class="body"> 
+					In my introductory graphic design class, our project involved crafting an infographic centered 
+					around a topic we are passionate about or enjoy. I chose to focus on 'Into the Spider-Verse. 
+                </p>
+				<img src={graphic.src} width={graphic.width} height ={graphic.height} alt="SpiderMan Infographic" class="graphImg">
+			</div>
+            <Footer></Footer>
+		</section>
+    </body>
+</html>

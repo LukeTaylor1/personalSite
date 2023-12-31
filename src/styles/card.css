@@ -1,0 +1,17 @@
+* {
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+    width: 907px;
+    height: 491px;
+    object-fit: cover;
+}
+
+p {
+    position: relative;
+    top: -30px;
+    font-size: 45px;
+}

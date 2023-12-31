@@ -1,0 +1,43 @@
+---
+// Styles
+import '../styles/footer.css'
+import resume from '../images/resume.pdf'
+
+---
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+		<!-- Other head elements -->
+		<title>Luke Taylor</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<section id="footer"> 
+			<!-- <h3 class="footerTitle">Contact</h3> -->
+			<div class="footerCont">
+				<div class="siteMap">
+					<a href="/">Home</a>
+					<a href="/works">Works</a>
+					<a href={resume} target="_blank">Resume</a>
+				</div>
+				<div class="contactInfo">
+					<a href="tel:8595335177" class="contactEle bLinks">P: 8595335177<a>
+					<br>
+					<a href="mailto: lta255@uky.edu" class="contactEle bLinks">E: lta255@uky.edu</a>
+				</div>
+				<div class="footLinks">
+					<a href="https://twitter.com/LukeXTaylor" class="fab fa-twitter fa-4x bLinks" target="_blank"></a>
+					<a href="https://www.linkedin.com/in/lucian-taylor/" class="fab fa-linkedin fa-4x bLinks" target="_blank"></a>
+					<a href="https://www.instagram.com/lucian.jp3g/" class="fab fa-instagram fa-4x bLinks" target="_blank"></a>
+					<a href="https://open.spotify.com/user/12129893527" class="fab fa-spotify fa-4x bLinks" target="_blank"></a>
+					<a href="https://github.com/LukeTaylor1" class="fab fa-github fa-4x bLinks" target="_blank"></a>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

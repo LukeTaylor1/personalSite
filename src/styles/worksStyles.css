@@ -1,0 +1,87 @@
+
+/* * {
+    border: 0;
+} */
+
+
+/* fixes width problem */
+/* vvvvvvv */
+html,body{
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: initial !important;
+}
+/* ^^^^^^^ */
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+body {
+    background-color: #ECE3DA ;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+section.worksMain{
+    width: 20%;
+}
+
+.worksMain {
+    display: flex;
+    flex-direction: row;
+    gap: 202px;
+    position: relative;
+    left: 200px;
+    top: 50px;
+}
+
+.sortMenu {
+    position: relative;
+    top: 0px;
+}
+
+.worksMainTitle{
+    font-size: 75px;
+    position: relative;
+    left: 150px;
+    top: -50px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.navFix {
+    position: relative;
+    top: 43px;
+    right: 80px
+}
+
+.sortable{
+    display: none;
+}
+
+.sortable.active{
+    display: block;
+}
+
+#sortOptions {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+    text-decoration: none;
+    font-size: 45px;
+    background-color: #ECE3DA;
+}

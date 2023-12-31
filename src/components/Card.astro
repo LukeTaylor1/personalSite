@@ -1,0 +1,16 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+import '../styles/card.css'
+
+const {text, 
+    imageFile,
+    bioLink,
+    ...rest
+} = Astro.props
+---
+<html>
+    <div id="projectCard">
+        <a href={bioLink}><img src={imageFile.src} width={imageFile.width} height ={imageFile.height} alt="image File" {...rest} /></a>
+        <p {...rest}>{text}</p>
+    </div>
+</html>

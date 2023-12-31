@@ -1,0 +1,121 @@
+---
+// Components 
+import Nav from '../components/Nav.astro'
+
+// Styles
+import '../styles/global.css'
+
+// Images
+import placeHolder from '../../src/images/placeholder.jpg'
+import microPic from '../../src/images/AMLI_4.jpg'
+import spotifyLogo from '../../src/images/spotifyLogo.png'
+import quenchLogo from '../../src/images/waterTrackerLogo.jpeg'
+import Footer from '../components/Footer.astro'
+import resume from '../images/resume.pdf'
+---
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+		<!-- Other head elements -->
+		<title>Luke Taylor</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<section id="section1">
+			<div class="rectangle" id="rectangleOne"></div>
+			<div class="rectangle" id="rectangleTwo"></div>
+			<div class="landing"> 
+				<Nav></Nav>
+				<div class="links sect1Links">
+					<a href="https://twitter.com/LukeXTaylor" class="fab fa-twitter fa-2xl" id="icon1" target="_blank"></a>
+					<a href="https://www.linkedin.com/in/lucian-taylor/" class="fab fa-linkedin fa-2xl" id="icon2" target="_blank"></a>
+					<a href="https://www.instagram.com/lucian.jp3g/" class="fab fa-instagram fa-2xl" id="icon3" target="_blank"></a>
+				</div>
+
+				<div id="landingText">
+					<h1 id="landingTitle">I'm a <div id="softwareDeveloper">Software Developer</div> and <div id="uxDesigner">UX designer</div>,
+						<br> 
+						dedicated to improving the daily lives of people.</h1>
+
+					<div class="bodyText">
+						<p id="sub1">I recently graduated from the University of <br>
+							Kentucky with a degree in computer science <br>
+							and specialize in web development and UI/<br>
+							UX.</p>
+						<p id="sub2">Outside of the professional setting, I enjoy <br>
+							talking basketball, fitness, technology, and <br>
+							photography.</p>
+					</div>
+				</div>
+
+				<img src={placeHolder.src} width={placeHolder.width} height ={placeHolder.height} alt="placeholder" id="landingImage">
+
+			</div>
+		</section>
+
+
+		<section id="section2">
+
+			<div class="sec2Left">
+				<h3 class="sect2Sub leftTitles">education</h3>
+				<p>University of Kentucky</p>
+				<p id="degree">Bachelors of Science in Computer Science</p>
+				<h3 class="sect2Sub leftTitles">technical skills</h3>
+				<p id="softwareTitle">software</p>
+					<div id="softwareButtons">
+						<button type="button">Figma</button>
+						<button type="button">Photoshop</button>
+						<button type="button">Illustrator</button>
+						<button type="button">InDesign</button>
+						<button type="button">GitHub</button>
+						<button type="button">Jira</button>
+				</div>
+				<h1 class="sect2Sub leftTitles">experience</h1>
+				<div id="experiences">
+					<p>Research Co-Author</p>
+					<p>Freelance Web Designer</p>
+					<p>Octane Design <span class="expTitle">Intern</span></p>
+					<p>NACME Machine Learning Bootcamp <span class="expTitle">Intern</span></p>
+					<p>UK Campus Recreation <span class="expTitle">Supervisor</span></p>
+				</div>
+			</div>
+
+			<div class="sec2Right">
+				<div id="sect2Rect"></div>
+				<a href={resume} target="_blank" id="resumeLink"><p id="resumePDF">resume pdf</p></a>
+				<p id="codingTitle">coding</p>
+				<div id="codingButtons">
+					<button type="button">HTML/CSS</button>
+					<button type="button">JavaScript</button>
+					<button type="button">Python</button>
+					<button type="button">Swift</button>
+					<button type="button">SQL</button>
+					<button type="button">VS Code</button>
+				</div>
+				<div id="dates">
+					<p>July 2022 - May 2023</p>
+					<p>May 2023 - Present</p>
+					<p>May 2018 - May 2019</p>
+					<p>June 2022 - May 2023</p>
+					<p>August 2020 - July 2023</p>
+				</div>
+		</section>
+
+		<section id="section3">
+			<h1 id="myWorkTitle">my works</h1>
+			<div class="workPreview">
+				<a href="/microDebi"><img src={microPic.src} width={microPic.width} height ={microPic.height} alt="presentation picture" class="workPrevImg"></a>
+				<a href="/spotifyRedesign"><img src={spotifyLogo.src} width={spotifyLogo.width} height ={spotifyLogo.height} alt="Spotify Redesign" class="workPrevImg"></a>
+				<a href="/waterTracker"><img src={quenchLogo.src} width={quenchLogo.width} height ={quenchLogo.height} alt="Quench Logo" class="workPrevImg"></a>
+			</div>
+			<!-- <button type="button" id="viewAllbtn" onclick="window.location.href='/works';">view all</button> -->
+			<a href="/works" class="underlineAni viewAll">View All</a>
+		</section>
+		<Footer></Footer>
+	</body>
+</html>

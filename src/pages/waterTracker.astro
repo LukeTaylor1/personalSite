@@ -1,0 +1,60 @@
+---
+import microPic from '../../src/images/AMLI_4.jpg'
+import Footer from '../components/Footer.astro';
+import screen1 from '../images/quenchAppScreenshot1.png'
+import screen2 from '../images/quenchAppScreenshot2.png'
+import '../styles/waterTrackerStyles.css'
+---
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+		<!-- Other head elements -->
+		<title>Water Tracker</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<script type="module" src="/src/script.js"></script>
+    </head>
+    <body>
+		<section class="container">
+            <a href="/works"><i class="fa fa-arrow-left fa-3x backArrow" aria-hidden="true"></i></a>
+            <img id="mainImg" src={microPic.src} width={microPic.width} height ={microPic.height} alt="presentation picture">
+            <div class="mainCont">
+				<p class="mainTitle">Water Tracker</p>
+					<p class="subTitle">Overview</p>
+					<p class="body">
+                        This project spanned an entire semester as part of the Mobile App Development course instructed by Dr. Corey Baker. 
+                        My assignment involved the creation of a health app leveraging Apple CareKit. The objective was to identify a health-related 
+                        issue and devise a solution to address it effectively
+                    </p>
+					<p class="subTitle">Problem and Goals</p>
+					<p class="body">
+                        I've observed that many individuals fall short of maintaining proper hydration, which can have significant repercussions on 
+                        their overall well-being. The Centers for Disease Control and Prevention (CDC) underscores the importance of adequate water intake 
+                        for regulating body temperature, lubricating joints, protecting sensitive tissues like the spinal cord, eliminating toxins, and 
+                        more. Inspired by this, I aimed to develop an app that serves as a reminder for users to stay hydrated, ensuring they not only meet 
+                        their water needs but also maintain a healthy caloric intake.
+					</p>
+					<p class="subTitle">Results</p>
+					<p class="body"> 
+                        The culmination of this project resulted in an app primarily centered around water intake, aptly named 'Quench.' Leveraging the 
+                        robust features of CareKit, such as charts and scheduling functionalities, proved instrumental in creating a tailored solution for 
+                        this health-oriented application. For a more in-depth exploration, including additional information and a demo video, you can refer 
+                        to the readme file associated with the project.
+					</p>
+                    <div id="appScreenShots">
+                        <img src={screen1.src} width={screen1.width} height={screen1.height} alt="log-in screen capture" id="img1">
+                        <img src={screen2.src} width={screen2.width} height={screen2.height} alt="home screen capture" id="img2">
+                    </div>
+					<a href="https://github.com/ukcs485gFall2022/final-project-client-LukeTaylor1" target="_blank"><div class="more">Read More</div></a>
+			</div>
+            <Footer></Footer>
+		</section>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+---
+// Components 
+import Card from '../components/Card.astro';
+import Nav from '../components/Nav.astro';
+
+// Images
+import NACME from '../images/AMLI_4.jpg'
+import waterTracker from '../images/waterTrackerIcon.jpg'
+import spotifyLogo from '../images/spotifyLogo.png'
+import streamIcon from '../images/streamIcon.png'
+import deliciousBitesCover from '../images/deliciousBitesCover.jpg'
+import infographicCover from '../images/340Infographic-06.jpg'
+import passionProj from '../images/hiphopcover.jpg'
+import posterCover from '../images/pyschJean.jpg'
+
+// Style Sheets
+import '../styles/worksStyles.css'
+import Footer from '../components/Footer.astro';
+
+---
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+		<!-- Other head elements -->
+		<title>My works</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+		<section>
+        	<p class="worksMainTitle">my work</p>
+			<Nav></Nav>
+		</section>
+		<section class="worksMain">
+			<div class="sortMenu">
+				<select id="sortOptions">
+					<option value="all" selected>All</option>
+					<option value="code">Code</option>
+					<option value="uiux">UI/UX</option>
+					<option value="design">Design</option>
+				</select>
+			</div>
+			<div class="cards">
+				<Card text="Rocks + Machine Learning" imageFile= {NACME} bioLink="/microDebi" class="sortable all code"></Card>
+				<Card text="Water Tracker Application" imageFile= {waterTracker} bioLink="/waterTracker" class="sortable all code uiux"></Card>
+				<Card text="Spotify Desktop Redesign" imageFile={spotifyLogo} bioLink="/spotifyRedesign" class="sortable all uiux design"></Card>
+				<Card text="Live Stream App" imageFile={streamIcon} bioLink="/liveStream" class="sortable all uiux design"></Card>
+				<Card text="Delicious Bites Webdesign" imageFile={deliciousBitesCover} bioLink="/deliciousBites" class="sortable all design"></Card>
+				<Card text="Spiderverse Infographic" imageFile={infographicCover} bioLink="/itsvInfoGraphic" class="sortable all design"></Card>
+				<Card text="HipHop Book" imageFile={passionProj} bioLink="/passionProj" class="sortable all design"></Card>
+				<Card text="Album Posters" imageFile={posterCover} bioLink="/artPoster" class="sortable all design"></Card>
+			</div>
+		</section>
+    </body>
+	<Footer></Footer>
+	<script>
+        import "../scripts/worksScript"
+    </script>
+</html>

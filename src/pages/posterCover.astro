@@ -1,0 +1,48 @@
+---
+import microPic from '../../src/images/AMLI_4.jpg'
+import Footer from '../components/Footer.astro';
+import '../styles/waterTrackerStyles.css'
+---
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+		<!-- Other head elements -->
+		<title>Water Tracker</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<script type="module" src="/src/script.js"></script>
+    </head>
+    <body>
+		<section class="container">
+			<a href="/works"><i class="fa fa-arrow-left fa-3x backArrow" aria-hidden="true"></i></a>
+			<div class="mainMicro">
+				<img src={microPic.src} width={microPic.width} height ={microPic.height} alt="presentation picture" class="mainImg">
+				<p class="mainTitle mt1">Rocks +</p>
+				<p class="mainTitle mt2">Machine Learning</p>
+				<div class="content">
+					<p class="subTitle">Overview</p>
+					<p class="body"></p>
+					<p class="subTitle">Goals</p>
+					<p class="body"></p>
+					<p class="subTitle">Problem</p>
+					<p class="body">
+					</p>
+					<p class = "subTitle">Goal</p>
+					<p class="body"></p>
+					<p class="subTitle">Results</p>
+					<p class="body"> 
+					</p>
+					<a href="https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/main/README.md" target="_blank"><div class="more">Read More</div></a>
+				</div>
+			</div>
+		</section>
+		<Footer></Footer>
+    </body>
+</html>

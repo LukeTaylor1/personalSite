@@ -1,0 +1,90 @@
+---
+import resume from '../images/resume.pdf'
+
+---
+
+<html>
+    <a id="navBar" onclick="openNav()">Menu</a>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" id="closeBtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="/">Home</a>
+            <a href="/works">Works</a>
+            <a href={resume} target="_blank">Resume</a>
+        </div>
+    </div>
+    <script>
+        import "../scripts/navScript"
+    </script>
+</html>
+
+<style>
+    #navBar {
+        border: none;
+        background: none;
+        font-size: 25px;
+        font-style: normal;
+        cursor: pointer;
+        color: #353238;
+        position: absolute;
+        top: 43px;
+        right: 80px;
+    }
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #ECE3DA;
+        background-color: rgba(132,132,132, 0.95);
+        overflow-y: hidden;
+        transition: 0.5s;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Flex', sans-serif;
+    }
+    
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        top: 350px;
+        left: 650px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #353238;
+        font-size: 75px;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    @media screen and (max-height: 450px) {
+        .overlay {overflow-y: auto;}
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+        }
+    }
+</style>

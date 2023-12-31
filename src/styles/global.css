@@ -1,0 +1,345 @@
+@font-face {
+    font-family:"HelveticaNeue";
+    src: url("../fonts/helveticaNeueMediumCond.otf")format('opentype');
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: initial !important;
+}
+
+body  {
+    background-color: #ECE3DA ;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Section 1  */
+#section1{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.rectangle  {
+    width: 245px;
+    height: 20px;
+    flex-shrink: 0;
+    background-color: #353238;
+}
+
+#rectangleOne {
+    position: absolute;
+    top: 128px;
+    left: 232px;
+}
+
+#rectangleTwo {
+    position: absolute;
+    top: 800px;
+    right: 200px;
+}
+
+.landing{
+    color: #353238;
+    width: 100%;
+    height: 1117px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    left: -75px;
+}
+
+#landingImage{
+    position: relative;
+    top: -80px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 160px;
+    width: 100%;
+    height: 100px;
+    justify-content:space-between;
+    color: #353238;
+}
+
+.sect1Links {
+    position: relative;
+    right: -100px;
+    top: -100px;
+}
+
+#icon1{
+    color: #353238;
+}
+
+#icon2{
+    color: #353238;
+}
+
+#icon3{
+    color: #353238;
+}
+
+#landingText {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -100px;
+}
+
+#softwareDeveloper {
+    display: inline;
+    color: #E36588;
+}
+
+#uxDesigner {
+    display: inline;
+    color: #3E92CC;
+}
+
+#landingImage{
+    width: 509px;
+    height: 632px;
+}
+
+#landingTitle {
+    width: 709px;
+    height: 244px;
+    flex-shrink: 0;
+    font-size: 52px;
+    font-style: normal;
+    
+    font-weight: 500px;
+    line-height: 64px; /* 123.077% */
+    letter-spacing: 2.08px;
+}
+
+.bodyText{
+    position: relative;
+    right: 187px;
+}
+
+#sub1 {
+    width: 642px;
+    height: 153px;
+    flex-shrink: 0;
+    /* font-family: "HelveticaNeue"; */
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px; /* 126.667% */
+    letter-spacing: 0.6px;
+}
+
+#sub2 {
+    width: 642px;
+    height: 105px;
+    flex-shrink: 0;
+    /* font-family: "HelveticaNeue"; */
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px; /* 126.667% */
+    letter-spacing: 0.6px;
+}
+
+p {
+    /* font-family: "HelveticaNeue"; */
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px; /* 126.667% */
+    letter-spacing: 0.8px;
+}
+
+/* Section 2 */
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+    width: 100%;
+    height: 1350px;
+    background-color: #353238;
+    color:#ECE3DA;
+    display: flex;
+    flex-direction: row;
+}
+
+#resumeLink {
+    color: #ECE3DA;
+}
+
+.sect2Sub {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.sec2Left, p {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+    left: 195px;
+}
+
+.sec2Right{
+    position: relative;
+    left: 257px;
+}
+
+.leftTitles {
+    position: relative;
+    left: 75px;
+}
+
+#codingButtons, #softwareButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: relative;
+    left: 150px;
+    width: 642px;
+}
+
+#codingButtons {
+    position: relative;
+    top: 305px;
+    left: 190px;
+}
+
+#softwareButtons{
+    position: relative;
+    left: 190px;
+}
+
+#dates {
+    position: relative;
+    top: 430px;
+}
+
+#codingTitle {
+    position: relative;
+    top: 305px;
+}
+
+
+#softwareTitle, #codingTitle {
+    font-size: 40px;
+}
+
+#sect2Rect{
+    width: 662px;
+    height: 19px;
+    flex-shrink: 0;
+    background: #ECE3DA;
+    position: relative;
+    top: 120px;
+}
+
+#degree{
+    font-size: 20px;
+    position: relative;
+    bottom: 25px;
+}
+
+button{
+    padding: 2px 30px;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 23px;
+    font-size: 22px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+#resumePDF {
+    font-size: 45px;
+    position: relative;
+    top: 120px;
+}
+
+/* Section Three */
+#section3 {
+    width: 100%;
+    height: 1000px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+    color: #353238;
+}
+#myWorkTitle{
+    font-size: 75px;
+    position: relative;
+    top: 75px;
+    left: 75px;
+}
+
+.workPrevImg {
+    width: 509px;
+    height: 359px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.workPreview {
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+    position: relative;
+    left: 125px;
+    top: 100px;
+}
+
+#viewAllbtn {
+    position: relative;
+    left: 885px;
+    top: 250px;
+}
+
+.viewAll {
+    position: relative;
+    left: 885px;
+    top: 250px;
+    font-size: 35px;
+    color: #353238;
+}
+
+
+.underlineAni {
+    text-decoration: none;
+    &:hover {
+      &::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 250ms;
+    }
+}

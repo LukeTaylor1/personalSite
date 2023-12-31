@@ -1,0 +1,42 @@
+---
+import Footer from '../components/Footer.astro';
+import '../styles/passionStyles.css'
+import img1 from '../images/behancePrint.jpg'
+import img2 from '../images/behancePrint7.jpg'
+import img3 from '../images/behancePrint8.jpg'
+---
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+		<!-- Other head elements -->
+		<title>Passion Project</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<script type="module" src="/src/script.js"></script>
+    </head>
+    <body>
+		<section class="container">
+            <a href="/works"><i class="fa fa-arrow-left fa-3x backArrow" aria-hidden="true"></i></a>
+            <div class="mainCont">
+				<p class="mainTitle">Passion Project</p>
+					<p class="body"> 
+                        For this project, I undertook the challenge of designing a mini-magazine, implementing the text layout techniques I had practiced up 
+						to that point. I decided to channel my passion for late 90s/early 2000s hip-hop into the creation of this magazine.
+					</p>
+                    <div id="magPhotos">
+                        <img src={img1.src} width={img1.width} height={img1.height} alt="magazine clip" id="img1">
+                        <img src={img2.src} width={img2.width} height={img2.height} alt="magazine clip" id="img2">
+						<img src={img3.src} width={img3.width} height={img3.height} alt="magazine clip" id="img3">
+                    </div>
+					<a href="https://www.behance.net/gallery/168521319/Passion-Project-Magazine" target="_blank"><div class="more">View All</div></a>
+				</div>
+            <Footer></Footer>
+		</section>
+    </body>
+</html>

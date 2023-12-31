@@ -1,0 +1,76 @@
+#footer{
+    width: 100%;
+    height: 500px;
+    background-color: #353238;
+    color:#ECE3DA;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.siteMap {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 35px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -10px;
+}
+
+div.siteMap a{
+    color: #ECE3DA;
+}
+
+.footerCont {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 200px;
+    left: 250px;
+    gap: 300px;
+}
+
+.footLinks {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    position: relative;
+    /* left: 250px;
+    top: -75px; */
+}
+
+a.footLinks{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    background:#ECE3DA;
+    height: 75px;
+    width: 600px;
+    text-decoration: none;
+}
+
+.bLinks{
+    color: #ECE3DA;
+}
+
+.contactInfo{
+    position: relative;
+    /* left: 1000px;
+    top: 75px; */
+}
+
+.contactInfo, p{
+    font-size: 35px;
+}
+
+.contactEle {
+    position: relative;
+    /* left: 194px;
+    bottom: 30px; */
+}
