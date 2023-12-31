@@ -66,6 +66,8 @@ button {
 #landingImage{
     position: relative;
     top: -80px;
+    width: 509px;
+    height: auto;
 }
 
 .links {
