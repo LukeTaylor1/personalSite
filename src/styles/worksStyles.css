@@ -165,7 +165,6 @@ section.worksMain{
     .cards {
         gap: 10px;
     }
-
 }
 
 @media(min-width: 769px) and (max-width: 900px){
