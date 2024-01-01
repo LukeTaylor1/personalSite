@@ -92,3 +92,263 @@ img {
     position: relative;
     left: 40%;
 }
+
+
+@media (max-width: 328px) {
+    img{
+        top: 0; 
+    }
+
+    a {
+        font-size: 10px;
+    }
+
+    .container {
+        width: auto; 
+    }
+
+    .mainMicro{
+        gap: 20px;
+        height:fit-content;
+        left: 0;
+        gap: 0;
+        align-items: center;
+        top: 10px;
+    }
+
+    .backArrow {
+     position: relative;
+     left: -145px;
+     top: 0; 
+    }    
+    
+    .mainImg {
+        width: 250px;
+        height: auto;
+        top: 0;
+    }
+
+    .mainTitle{
+        font-size: 45px;
+    }
+
+    .mt1, .mt2{
+        left: 0;
+        top: 0;
+        margin: 0;
+        
+    }
+
+    .mt2 {
+        width: 200px;
+    }
+
+    .title {
+        order: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+    }
+    .content {
+        left: 0;
+        top: 0;
+    }
+
+    .subTitle{
+        font-size: 30px;
+    }
+
+    .body {
+        width: 220px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .more {
+        display: inline-flex;
+        padding: 2px 30px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 23px;
+        background: #848484;
+        text-decoration: none;
+        color: #ECE3DA;
+        position: relative;
+        left: 45px;
+        margin-bottom: 33px;
+    }
+
+    
+}
+
+/* small tablet */
+@media(min-width: 329px) and (max-width: 568px){
+   img {
+    top: 0;
+   }
+    
+    a {
+        font-size: 10px;
+    }
+
+    .container{
+        width: auto
+    }
+
+    .mainMicro {
+        gap: 20px;
+        height: fit-content;
+        left: 0;
+        gap: 0;
+        align-items: center;
+        top: 12px;
+    }
+
+    .backArrow {
+        position: relative;
+        left: -240px;
+        top: 0;
+    }
+
+    .mainImg {
+        width: 400px;
+        height: auto;
+        top: 0;
+    }
+
+    .mainTitle {
+        font-size: 45px;
+    }
+
+    .mt1, .mt2 {
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+    }
+
+    .subTitle {
+        font-size: 30px;
+    }
+
+    .content{
+        left: 0;
+        top: 0;
+    }
+
+    .body {
+        width: 400px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .more {
+        display: inline-flex;
+        padding: 2px 30px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 23px;
+        background: #848484;
+        text-decoration: none;
+        color: #ECE3DA;
+        position: relative;
+        left: 115px;
+        margin-bottom: 45px;
+        font-size: 20px;
+    }
+
+
+
+}
+
+/* tablet */
+@media(min-width: 569px) and (max-width: 768px){
+    img {
+        top: 0;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    .container{
+        width: auto;
+        height: auto;
+    }
+
+    .mainMicro {
+        height: 1000px;
+        left: 0;
+        gap: 0;
+        align-items: center;
+        top: 15px;
+    }
+
+    .backArrow {
+        position: relative;
+        left: -340px;
+        top: 0;
+    }
+
+    .mainImg {
+        width: 600px;
+        height: auto;
+        top: 0;
+    }
+
+    .mainTitle {
+        font-size: 55px;
+    }
+
+    .mt1, .mt2 {
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+    }
+
+    .subTitle {
+        font-size: 30px;
+    }
+
+    .content {
+        left: 0;
+        top: 0;
+    }
+
+    .body {
+        width: 600px;
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .more {
+        display: inline-flex;
+        padding: 2px 30px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 23px;
+        background: #848484;
+        text-decoration: none;
+        color: #ECE3DA;
+        position: relative;
+        left: 190px;
+        margin-bottom: 45px;
+        font-size: 25px;
+    }
+
+   
+}

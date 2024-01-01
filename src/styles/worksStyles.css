@@ -44,7 +44,7 @@ section.worksMain{
     position: relative;
     left: 200px;
     top: 50px;
-    height: 5650px;
+    height: auto;
 }
 
 .sortMenu {
@@ -86,4 +86,143 @@ section.worksMain{
     font-size: 45px;
     background-color: #ECE3DA;
     color: #353238;
+}
+
+@media (max-width: 328px) {
+    .worksMain {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        left: 13px;
+        top: 0px;
+    }
+
+    .worksMainTitle {
+        font-size: 45px;
+        top: 0; 
+        left: 10px;
+    }
+
+    #sortOptions {
+        font-size: 20px;
+    }
+
+    .cards {
+        gap: 10px;
+    }
+    
+}
+
+/* small tablet */
+@media(min-width: 329px) and (max-width: 568px){
+    .worksMain {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        left: 80px;
+        top: 0px;
+    }
+
+    .worksMainTitle {
+        font-size: 50px;
+        top: 0; 
+        left: 15px;
+    }
+
+    #sortOptions {
+        font-size: 20px;
+    }
+
+    .cards {
+        gap: 10px;
+    }
+ 
+
+}
+
+/* tablet */
+@media(min-width: 569px) and (max-width: 768px){
+
+    .worksMain {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        left: 80px;
+        top: 725px;
+        height: 4000px;
+    }
+
+    .worksMainTitle {
+        font-size: 50px;
+        top: 0; 
+        left: 15px;
+    }
+
+    #sortOptions {
+        font-size: 30px;
+    }
+
+    .cards {
+        gap: 10px;
+    }
+
+}
+
+@media(min-width: 769px) and (max-width: 900px){
+    .worksMain {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        left: 90px;
+        top: 500px;
+        height: 5000px;
+    }
+
+    .worksMainTitle {
+        font-size: 50px;
+        top: 0; 
+        left: 15px;
+    }
+
+    #sortOptions {
+        font-size: 30px;
+    }
+
+    .cards {
+        gap: 10px;
+    }
+
+}
+
+@media(min-width: 901px) and (max-width: 1024px){
+    .worksMain {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        left: 60px;
+        top: 0;
+        height: 5000px;
+    }
+
+    .worksMainTitle {
+        font-size: 50px;
+        top: 0; 
+        left: 15px;
+    }
+
+    #sortOptions {
+        font-size: 30px;
+    }
+
+    .cards {
+        gap: 10px;
+    }
+}
+
+@media(min-width: 1024px) and (max-width: 1382px){
+    .worksMain {
+       left: 54px;
+       gap: 24px;
+    }
+
 }

@@ -41,8 +41,6 @@ div.siteMap a{
     flex-direction: row;
     gap: 25px;
     position: relative;
-    /* left: 250px;
-    top: -75px; */
 }
 
 a.footLinks{
@@ -74,3 +72,261 @@ a.footLinks{
     /* left: 194px;
     bottom: 30px; */
 }
+
+
+@media (max-width: 328px) {
+    #footer{
+        font-size: 12px;
+        height: 150px;
+    }
+
+    .footerCont {
+        left: 0;
+        top: 0;
+        width: 100%;
+        gap: 0;
+    }
+
+    .siteMap {
+        display: none;
+    }
+
+    .contactInfo {
+        display: none;
+    }
+
+    .footLinks{
+        gap: 20px;
+        top: 50px;
+        left: 10px;
+
+    }
+
+    a.footLinks{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        background:#ECE3DA;
+        height: 75px;
+        width: 20px;
+        text-decoration: none;
+    } 
+}
+
+/* small tablet */
+@media(min-width: 329px) and (max-width: 568px){
+    #footer{
+        font-size: 12px;
+        height: 150px;
+        position: relative;
+        bottom: -56px;
+    }
+
+    .footerCont {
+        left: 0;
+        top: 0;
+        width: 100%;
+        gap: 0;
+    }
+
+    .siteMap {
+        display: none;
+    }
+
+    .contactInfo {
+        display: none;
+    }
+
+    .footLinks{
+        gap: 40px;
+        top: 50px;
+        left: 84px;
+    }
+
+    a.footLinks{
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+        background:#ECE3DA;
+        height: 75px;
+        width: 20px;
+        text-decoration: none;
+    } 
+
+}
+
+/* tablet */
+@media(min-width: 569px) and (max-width: 768px){
+
+    #footer{
+        position: relative;
+        height: 200px;
+        bottom: -1500px; 
+    }
+
+    .footerCont {
+        left: 0;
+        top: 0;
+        width: 100%;
+        gap: 0;
+    }
+
+    .siteMap{
+        display: none;
+    }
+
+    .contactInfo{
+        display: none;
+    }
+
+    .footLinks {
+        gap: 40px;
+        top: 50px;
+        left: 160px;
+    }
+    
+    a.footLinks{
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+        background:#ECE3DA;
+        height: 75px;
+        width: 20px;
+        text-decoration: none;
+    } 
+}
+
+@media(min-width: 769px) and (max-width: 900px){
+    #footer{
+        position: relative;
+        height: 200px;
+        bottom: -1300px; 
+    }
+
+    .footerCont {
+        left: 0;
+        top: 0;
+        width: 100%;
+        gap: 0;
+    }
+
+    .siteMap{
+        display: none;
+    }
+
+    .contactInfo{
+        display: none;
+    }
+
+    .footLinks {
+        gap: 40px;
+        top: 50px;
+        left: 160px;
+    }
+    
+    a.footLinks{
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+        background:#ECE3DA;
+        height: 75px;
+        width: 20px;
+        text-decoration: none;
+    } 
+}
+
+
+
+@media(min-width: 901px) and (max-width: 1024px){
+    #footer{
+        position: relative;
+        height: 200px;
+        bottom: -700px; 
+        align-items: center;
+    }
+
+    .footerCont {
+        left: 100px;
+        top: 30px;
+        width: 100%;
+        gap: 0;
+    }
+
+    .siteMap{
+        font-size: 35px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 20px;
+    }
+
+    .contactInfo{
+        display: none;
+    }
+
+    .footLinks {
+        gap: 40px;
+        top: 50px;
+        left: 160px;
+    }
+    
+    a.footLinks{
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+        background:#ECE3DA;
+        height: 75px;
+        width: 20px;
+        text-decoration: none;
+    } 
+}
+
+@media(min-width: 1024px) and (max-width: 1382px){
+    #footer{
+        position: relative;
+        height: 200px;
+        bottom: -222px; 
+        align-items: center;
+    }
+
+    .footerCont {
+        left: 180px;
+        top: 30px;
+        width: 100%;
+        gap: 183px;
+    }
+
+    .siteMap{
+        font-size: 35px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 20px;
+    }
+
+    .contactInfo{
+        display: none;
+    }
+
+    .footLinks {
+        gap: 40px;
+        top: 50px;
+        left: 160px;
+    }
+    
+    a.footLinks{
+        display: flex;
+        flex-direction: row;
+        gap: 45px;
+        background:#ECE3DA;
+        height: 75px;
+        width: 20px;
+        text-decoration: none;
+    } 
+}
+
+

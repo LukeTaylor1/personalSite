@@ -190,6 +190,11 @@ p {
     color: #ECE3DA;
 }
 
+.sec2Body {
+    display: flex;
+    flex-direction: row;
+}
+
 .sect2Sub {
     font-size: 55px;
     font-weight: 700;
@@ -345,4 +350,672 @@ button{
       transform-origin: right;
       transition: transform 250ms;
     }
+}
+
+/* phone */
+@media (max-width: 328px) {
+
+    br{
+        display: none;
+    }
+
+    .sect1Links{
+        display: none;
+    }
+
+    .landing{
+        flex-direction: column;
+        align-content: center;
+        left: 0;
+    }
+
+    #landingTitle {
+        font-size: 45px;
+        width: 220px;
+        line-height: 40px;
+        height: auto;
+    }
+
+    #landingText {
+        display: flex;
+        position: relative;
+        top: 0;
+        justify-items: center;
+        gap: 40px;
+    }
+
+    .titleText {
+        position: relative;
+        top: 50px;
+    }
+
+    .bodyText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 200px;
+        position: relative;
+        right: 0;
+    }
+
+    #sub1, #sub2 {
+        height: 125px;
+        width: 250px;
+        font-size: 12px;
+        line-height: 25px;
+        margin: 0;
+        left: 0;
+    }
+
+    #landingImage {
+        width: 250px;
+        height: auto; 
+        top: -10px;
+    
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    #section2 {
+        display: none
+    }
+
+    #sect3Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #myWorkTitle{
+        font-size: 45px;
+        top: 0;
+        left: 0;
+    }
+
+    .workPrevImg{
+        width: 250px;
+        height: auto;
+    }
+
+    .workPreview {
+        flex-direction: column;
+        left: 0;
+        top: -3px;
+        gap: 10px;
+    }
+
+    #viewAllbtn {
+        left: 0;
+        top: 0;
+    }
+
+    .viewAll {
+        left: 0;
+        top: 15px;
+        font: 25px;
+    }
+
+}
+
+/* small tablet */
+@media(min-width: 329px) and (max-width: 568px){
+
+    br {
+        display: none;
+    }
+
+    .sect1Links {
+        display: none;
+    }
+
+    .landing {
+        left: 0;
+        flex-direction: column;
+        align-content: center;
+        gap: 25px;  
+    }
+
+    #landingText {
+        display: flex;
+        gap: 40px;
+        justify-content: center;
+        top: 0;
+    }
+
+    .titleText {
+        position: relative;
+        top: 50px;
+    }
+
+    #landingTitle {
+        font-size: 45px;
+        width: 450px;
+        line-height: 50px;
+        height: auto;
+    }
+
+    .bodyText {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        position: relative;
+        right: 0;
+        width: 450px;
+    }
+
+    #sub1, #sub2 {
+        left: 10px;
+        width: 450px;
+        margin: 0;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    #landingImage {
+        width: 300px;
+        height: auto;
+        top: 0px;
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    #section2 {
+        display: none
+    }
+
+
+    #sect3Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1200px;
+    }
+
+    #myWorkTitle {
+        font-size: 50px;
+        top: 30px;
+        left: 0;
+    }
+
+    .workPrevImg {
+        width: 300px;
+        height: auto;
+    }
+
+    .workPreview {
+        flex-direction: column;
+        left: 0;
+        gap: 10px;
+        top: 0;
+    }
+
+    .viewAll {
+        left: 0px;
+        top: 0px;
+        font-size: 25px;
+    }
+
+
+}
+
+/* tablet */
+/* go one up */
+@media(min-width: 569px) and (max-width: 768px){
+
+    br {
+        display: none;
+    }
+
+    .rectangle{
+        display: none;
+    }
+
+    .sect1Links {
+        display: none;
+    }
+
+    .landing {
+        flex-direction: column;
+        align-content: center;
+        gap: 120px;
+        left: 0;
+        top: 275px;
+    }
+
+    #landingText {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        top: 0;
+    }
+
+    .titleText{
+        position: relative;
+        /* top: 50px; */
+    }
+
+    #landingTitle {
+        font-size: 50px;
+        width: 600px;
+        top: 0;    
+    }
+
+    .bodyText {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+    }
+
+    #landingImage {
+        width: 600px;
+        height: auto;
+        top: 0;    
+        left: 10px;
+    }
+
+    #section2{
+        display: none;
+    }
+
+
+    #sect3Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 2025px;
+        position: relative;
+        top: 570px;
+    }
+
+    #myWorkTitle {
+        font-size: 50px;
+        top: 30px;
+        left: 0;
+        position: relative;
+    }
+
+    .workPreview {
+        flex-direction: column;
+        left: 0;
+        gap: 10px;
+        top: 0;
+    }
+
+    .workPrevImg {
+        width: 500px;
+        height: auto;
+    }
+
+    .viewAll {
+        left: 0px;
+        top: 35px;
+        font-size: 35px;
+    }
+
+}
+
+
+@media(min-width: 769px) and (max-width: 900px){
+    br {
+        display: none;
+    }
+
+    .rectangle{
+        display: none;
+    }
+
+    .sect1Links {
+        display: none;
+    }
+
+    .landing {
+        flex-direction: column;
+        align-content: center;
+        gap: 130px;
+        left: 0;
+        top: 300px
+    }
+
+    #landingText{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        top: 0;
+    }
+
+    .titleText {
+        position: relative;
+    }
+
+    #landingTitle{
+        font-size: 55px;
+        width: 600px;
+        top: 0;
+        left: 10px;
+    }
+
+    .bodyText {
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+    }
+
+    #landingImage {
+        width: 500px;
+        height: auto;
+        top: 0;    
+        left: 10px;
+    }
+
+    #section2 {
+        display: none;
+    }
+
+    #sect3Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        position: relative;
+        top: 570px;
+    }
+
+    #myWorkTitle {
+        font-size: 50px;
+        top: 30px;
+        left: 0;
+        position: relative;
+    }
+
+    .workPreview {
+        flex-direction: column;
+        left: 0;
+        gap: 10px;
+        top: 0;
+    }
+
+    .workPrevImg {
+        width: 500px;
+        height: auto;
+    }
+
+    .viewAll {
+        left: 0px;
+        top: 35px;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media(min-width: 901px) and (max-width: 1024px){
+
+
+    br {
+        display: none;
+    }
+
+    .rectangle{
+        display: none;
+    }
+
+    .sect1Links {
+        display:none;
+    }
+
+    .landing{
+        gap: 20px;
+        left: 0;
+        top: 0;
+    }
+    
+    #landingtext {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
+
+    .titleText{
+        position: relative;
+    }
+
+    #landingTitle {
+        font-size: 55px;
+        width: 400px;
+    }
+
+    .bodyText {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        right: 0;
+        top: 200px;
+    }
+
+    #sub1, #sub2 {
+        left: 0px;
+        width: 400px;
+        margin: 0;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    #landingImage {
+        top:0;
+        width:400px;
+        height: auto;
+    }
+
+    #section2 {
+        height: fit-content;
+    }
+    .sec2Body {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 50px;
+    }
+
+    .sect2Sub {
+        font-size: 35px;
+    }
+
+    .sec2Left, p {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        position: relative;
+        left: 0;
+    }
+
+    #codingButtons, #softwareButtons, #softwareTitle, #codingTitle, #techSkills {
+        display: none;
+    }
+
+    .sec2Right{
+        left: 0;
+    }
+
+    #experiences p {
+        font-size: 20px;
+        width: 600px;
+    }
+
+    #sect2Rect{
+        width: 320px;
+    }
+
+    #uni {
+        font-size: 20px;
+    }
+    .education p {
+        font-size: 20px;
+    }
+
+    #experiences, .education {
+        position: relative;
+        left: 30px;
+    }
+
+    #dates {
+        top: 187px;
+    }
+
+    #dates p {
+        font-size: 20px;
+    }
+
+    #resumePDF {
+        font-size: 30px;
+        top: -14px;
+    }
+
+    #sect3Cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        position: relative;
+        top: 0;
+    }
+
+    #myWorkTitle {
+        font-size: 50px;
+        top: 30px;
+        left: 0;
+        position: relative;
+    }
+
+    .workPreview {
+        flex-direction: column;
+        left: 0;
+        gap: 10px;
+        top: 0;
+    }
+
+    .workPrevImg {
+        object-fit: cover;
+        width: 500px;
+        height: auto;
+    }
+
+    .viewAll {
+        left: 0px;
+        top: 35px;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media(min-width: 1025px) and (max-width: 1382px){
+
+    .bodyText {
+        right: 0;
+    }
+    #section2 {
+        height: fit-content;
+    }
+    .sec2Body {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 211px;
+    }
+
+    .sect2Sub {
+        font-size: 35px;
+    }
+
+    .sec2Left, p {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        position: relative;
+        left: 0;
+    }
+
+    #codingButtons, #softwareButtons, #softwareTitle, #codingTitle, #techSkills {
+        display: none;
+    }
+
+    .sec2Right{
+        left: 0;
+    }
+
+    #experiences p {
+        font-size: 20px;
+        width: 600px;
+    }
+
+    .leftTitles{
+        left: -20px;
+    }
+
+    #sect2Rect{
+        width: 320px;
+    }
+
+    #uni {
+        font-size: 20px;
+    }
+    .education p {
+        font-size: 20px;
+    }
+
+    #experiences, .education {
+        position: relative;
+        left: 30px;
+    }
+
+    #dates {
+        top: 187px;
+    }
+
+    #dates p {
+        font-size: 20px;
+    }
+
+    #resumePDF {
+        font-size: 30px;
+        top: -14px;
+    }
+    
+    #section3 {
+        height: fit-content;
+    }
+    #myWorkTitle {
+        font-size: 50px;
+        top: 30px;
+        left: 30px;
+        position: relative;
+    }
+
+    .workPreview {
+        left: 210px;
+        gap: 10px;
+        top: 100px;
+    }
+
+    .workPrevImg {
+        object-fit: cover;
+        width: 300px;
+        height: 225px;
+    }
+
+    .viewAll {
+        left: 600px;
+        top: 150px;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    
+
 }

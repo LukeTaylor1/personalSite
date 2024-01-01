@@ -38,10 +38,11 @@ import resume from '../images/resume.pdf'
 				</div>
 
 				<div id="landingText">
-					<h1 id="landingTitle">I'm a <div id="softwareDeveloper">Software Developer</div> and <div id="uxDesigner">UX designer</div>,
-						<br> 
-						dedicated to improving the daily lives of people.</h1>
-
+					<div class="titleText">
+						<h1 id="landingTitle">I'm a <div id="softwareDeveloper">Software Developer</div> and <div id="uxDesigner">UX designer</div>,
+							<br> 
+							dedicated to improving the daily lives of people.</h1>
+					</div>
 					<div class="bodyText">
 						<p id="sub1">I recently graduated from the University of <br>
 							Kentucky with a degree in computer science <br>
@@ -61,60 +62,67 @@ import resume from '../images/resume.pdf'
 
 		<section id="section2">
 
-			<div class="sec2Left">
-				<h3 class="sect2Sub leftTitles">education</h3>
-				<p>University of Kentucky</p>
-				<p id="degree">Bachelors of Science in Computer Science</p>
-				<h3 class="sect2Sub leftTitles">technical skills</h3>
-				<p id="softwareTitle">software</p>
-					<div id="softwareButtons">
-						<button type="button">Figma</button>
-						<button type="button">Photoshop</button>
-						<button type="button">Illustrator</button>
-						<button type="button">InDesign</button>
-						<button type="button">GitHub</button>
-						<button type="button">Jira</button>
+			<div class="sec2Body">
+				<div class="sec2Left">
+					<h3 class="sect2Sub leftTitles">education</h3>
+					<div class="education">
+						<p id="uni">University of Kentucky</p>
+						<p id="degree">Bachelors of Science in Computer Science</p>
+					</div>
+					<h3 class="sect2Sub leftTitles" id="techSkills">technical skills</h3>
+					<p id="softwareTitle">software</p>
+						<div id="softwareButtons">
+							<button type="button">Figma</button>
+							<button type="button">Photoshop</button>
+							<button type="button">Illustrator</button>
+							<button type="button">InDesign</button>
+							<button type="button">GitHub</button>
+							<button type="button">Jira</button>
+					</div>
+					<h1 class="sect2Sub leftTitles">experience</h1>
+					<div id="experiences">
+						<p>Research Co-Author</p>
+						<p>Freelance Web Designer</p>
+						<p>Octane Design <span class="expTitle">Intern</span></p>
+						<p>NACME Machine Learning Bootcamp <span class="expTitle">Intern</span></p>
+						<p>UK Campus Recreation <span class="expTitle">Supervisor</span></p>
+					</div>
 				</div>
-				<h1 class="sect2Sub leftTitles">experience</h1>
-				<div id="experiences">
-					<p>Research Co-Author</p>
-					<p>Freelance Web Designer</p>
-					<p>Octane Design <span class="expTitle">Intern</span></p>
-					<p>NACME Machine Learning Bootcamp <span class="expTitle">Intern</span></p>
-					<p>UK Campus Recreation <span class="expTitle">Supervisor</span></p>
+
+				<div class="sec2Right">
+					<div id="sect2Rect"></div>
+					<a href={resume} target="_blank" id="resumeLink"><p id="resumePDF">resume pdf</p></a>
+					<p id="codingTitle">coding</p>
+					<div id="codingButtons">
+						<button type="button">HTML/CSS</button>
+						<button type="button">JavaScript</button>
+						<button type="button">Python</button>
+						<button type="button">Swift</button>
+						<button type="button">SQL</button>
+						<button type="button">VS Code</button>
+					</div>
+					<div id="dates">
+						<p>July 2022 - May 2023</p>
+						<p>May 2023 - Present</p>
+						<p>May 2018 - May 2019</p>
+						<p>June 2022 - May 2023</p>
+						<p>August 2020 - July 2023</p>
+					</div>
 				</div>
 			</div>
-
-			<div class="sec2Right">
-				<div id="sect2Rect"></div>
-				<a href={resume} target="_blank" id="resumeLink"><p id="resumePDF">resume pdf</p></a>
-				<p id="codingTitle">coding</p>
-				<div id="codingButtons">
-					<button type="button">HTML/CSS</button>
-					<button type="button">JavaScript</button>
-					<button type="button">Python</button>
-					<button type="button">Swift</button>
-					<button type="button">SQL</button>
-					<button type="button">VS Code</button>
-				</div>
-				<div id="dates">
-					<p>July 2022 - May 2023</p>
-					<p>May 2023 - Present</p>
-					<p>May 2018 - May 2019</p>
-					<p>June 2022 - May 2023</p>
-					<p>August 2020 - July 2023</p>
-				</div>
 		</section>
 
 		<section id="section3">
-			<h1 id="myWorkTitle">my works</h1>
-			<div class="workPreview">
-				<a href="/microDebi"><img src={microPic.src} width={microPic.width} height ={microPic.height} alt="presentation picture" class="workPrevImg"></a>
-				<a href="/spotifyRedesign"><img src={spotifyLogo.src} width={spotifyLogo.width} height ={spotifyLogo.height} alt="Spotify Redesign" class="workPrevImg"></a>
-				<a href="/waterTracker"><img src={quenchLogo.src} width={quenchLogo.width} height ={quenchLogo.height} alt="Quench Logo" class="workPrevImg"></a>
+			<div id="sect3Cont">
+				<h1 id="myWorkTitle">my works</h1>
+				<div class="workPreview">
+					<a href="/microDebi"><img src={microPic.src} width={microPic.width} height ={microPic.height} alt="presentation picture" class="workPrevImg"></a>
+					<a href="/spotifyRedesign"><img src={spotifyLogo.src} width={spotifyLogo.width} height ={spotifyLogo.height} alt="Spotify Redesign" class="workPrevImg"></a>
+					<a href="/waterTracker"><img src={quenchLogo.src} width={quenchLogo.width} height ={quenchLogo.height} alt="Quench Logo" class="workPrevImg"></a>
+				</div>
+				<!-- <button type="button" id="viewAllbtn" onclick="window.location.href='/works';">view all</button> -->
+				<a href="/works" class="underlineAni viewAll">View All</a>
 			</div>
-			<!-- <button type="button" id="viewAllbtn" onclick="window.location.href='/works';">view all</button> -->
-			<a href="/works" class="underlineAni viewAll">View All</a>
 		</section>
 		<Footer></Footer>
 	</body>
