@@ -129,9 +129,9 @@ a.footLinks{
         gap: 0;
     }
 
-    .siteMap {
+    /* .siteMap {
         display: none;
-    }
+    } */
 
     .contactInfo {
         display: none;
@@ -172,7 +172,13 @@ a.footLinks{
     }
 
     .siteMap{
-        display: none;
+        display: flex;
+        top: 60px; 
+        left: 62px;
+    }
+
+    .siteMap a {
+        font-size: 30px;
     }
 
     .contactInfo{
@@ -181,8 +187,12 @@ a.footLinks{
 
     .footLinks {
         gap: 40px;
-        top: 50px;
+        top: 85px;
         left: 160px;
+    }
+
+    .footLinks a {
+        font-size: 50px;
     }
     
     a.footLinks{
@@ -211,7 +221,10 @@ a.footLinks{
     }
 
     .siteMap{
-        display: none;
+        display: flex;
+        top: 30px;
+        left: 35px;
+
     }
 
     .contactInfo{
@@ -221,7 +234,7 @@ a.footLinks{
     .footLinks {
         gap: 40px;
         top: 50px;
-        left: 160px;
+        left: 94px;
     }
     
     a.footLinks{
