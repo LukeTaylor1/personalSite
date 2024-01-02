@@ -421,14 +421,14 @@ img {
 
     
     .mainMicro {
-        left: 250px;
+        left: 207px;
         gap: 0;
         align-items: center;
-        height: 2750px;
+        height: 2225px;
     }
 
     .mainImg {
-        width: 950px;
+        width: 600px;
         height: auto;
         top: 0;
     }
