@@ -100,3 +100,105 @@ img {
     top: 35px;
     left: 655.5px;
 }
+
+
+@media(min-width: 769px) and (max-width: 900px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    
+    .mainSpot {
+        left: 100px;
+        gap: 0;
+        align-items: center;
+        height: 1750px;
+    }
+
+    .mainCont {
+        top: 100px;
+        left: 116px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        height: 1212px;
+    }
+
+    .mainTitle {
+        font-size: 55px;
+        top: 10px;
+    }
+
+    .subTitle {
+        font-size: 30px;
+    }
+
+    .body {
+        width: 680px
+    }
+
+    .more {
+        left: 235px;
+    }
+
+    #img1, #img2, #img3 {
+        width: 680px;
+    }
+
+    #magPhotos {
+        left:0;
+    }
+
+}
+
+
+@media(min-width: 1024px) and (max-width: 1382px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    
+    .mainSpot {
+        left: 100px;
+        gap: 0;
+        align-items: center;
+        height: 2439px;
+    }
+
+    .mainCont {
+        top: 100px;
+        left: 232px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        height: 3072px;
+    }
+
+    .mainTitle {
+        font-size: 55px;
+        top: 10px;
+    }
+
+    .subTitle {
+        font-size: 30px;
+    }
+
+    .body {
+        width: 950px
+    }
+
+    .more {
+        left: 399px;
+    }
+
+    #img1, #img2, #img3  {
+        width: 950px;
+    }
+
+    #magPhotos {
+        left:0;
+    }
+
+}

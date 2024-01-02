@@ -75,3 +75,97 @@ img {
     flex-direction: column;
     gap: 25px;
 }
+
+@media(min-width: 769px) and (max-width: 900px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    
+    .mainSpot {
+        left: 100px;
+        gap: 0;
+        align-items: center;
+        height: 1750px;
+    }
+
+    .mainCont {
+        top: 100px;
+        left: 125px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        height: 1167px;
+    }
+
+    .mainTitle {
+        font-size: 55px;
+        top: 10px;
+    }
+
+    .subTitle {
+        font-size: 30px;
+    }
+
+    .body {
+        width: 680px
+    }
+
+    .more {
+        left: 235px;
+    }
+
+    .streamImg {
+        width: 680px;
+    }
+
+}
+
+
+
+@media(min-width: 1024px) and (max-width: 1382px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    
+    .mainSpot {
+        left: 100px;
+        gap: 0;
+        align-items: center;
+        height: 2439px;
+    }
+
+    .mainCont {
+        top: 100px;
+        left: 190px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        height: 2540px;
+    }
+
+    .mainTitle {
+        font-size: 55px;
+        top: 10px;
+    }
+
+    .subTitle {
+        font-size: 30px;
+    }
+
+    .body {
+        width: 950px
+    }
+
+    .more {
+        left: 320px;
+    }
+
+    .streamImg {
+        width: 950px;
+    }
+
+}
