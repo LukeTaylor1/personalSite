@@ -71,7 +71,7 @@ button {
 }
 
 .links {
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-basis: 160px;
     width: 100%;
@@ -956,6 +956,10 @@ button{
 
     .leftTitles{
         left: -20px;
+    }
+
+    .landing {
+        left: 0px;
     }
 
     #sect2Rect{

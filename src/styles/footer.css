@@ -305,10 +305,10 @@ a.footLinks{
     }
 
     .footerCont {
-        left: 180px;
+        left: 110px;
         top: 30px;
-        width: 100%;
-        gap: 183px;
+        width: 50%;
+        gap: 0;
     }
 
     .siteMap{
