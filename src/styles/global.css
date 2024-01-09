@@ -914,7 +914,7 @@ button{
 }
 
 
-@media(min-width: 1025px) and (max-width: 1382px){
+@media(min-width: 1025px) and (max-width: 1381px){
 
     .bodyText {
         right: 0;
@@ -1019,7 +1019,57 @@ button{
         font-size: 35px;
         margin-bottom: 20px;
     }
+}
 
-    
+@media(min-width: 1382px) and (max-width: 1879px){
+        #rectangleOne{
+            left: 57px;
+        }
+
+        .landing{
+            left: 0;
+        }
+
+        .bodyText {
+            right: 0px;
+            left: -190px;
+        }
+
+        .sec2Left {
+            left: -10px;
+        }
+
+        .sec2Right {
+            left: -24px;
+        }
+
+        #softwareTitle #codingTitle {
+            left: 76px;
+        }
+        #softwareButtons {
+            left: 76px;
+        }
+
+        #codingButtons {
+            left: 76px;
+        }
+
+        #dates{
+            left: 125px;
+        }
+
+        .workPreview{
+            left: 48px;
+        }
+
+        .workPrevImg {
+            width: 386px;
+            height: 309px;
+        }
+
+        .viewAll {
+            left: 635px;
+        }
+
 
 }

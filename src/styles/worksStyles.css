@@ -225,3 +225,11 @@ section.worksMain{
     }
 
 }
+
+@media(min-width: 1383px) and (max-width: 1879px){
+    .worksMain {
+        left: 110px;
+        gap:100px;
+    }
+
+}

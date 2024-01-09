@@ -296,7 +296,7 @@ a.footLinks{
     } 
 }
 
-@media(min-width: 1024px) and (max-width: 1382px){
+@media(min-width: 1024px) and (max-width: 1381px){
     #footer{
         position: relative;
         height: 200px;
@@ -340,6 +340,14 @@ a.footLinks{
         width: 20px;
         text-decoration: none;
     } 
+}
+
+@media(min-width: 1382px) and (max-width: 1879px){
+    .footerCont {
+        left: 88px;
+        gap: 213px;
+    }
+
 }
 
 
